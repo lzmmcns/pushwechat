@@ -227,11 +227,6 @@ if __name__ == "__main__":
     if note_ch == "" and note_en == "":
         # 获取词霸每日金句
         note_ch, note_en = get_ciba()
-    # 获取生日差值
-    today = date.today()
-    year = today.year
-    birthday = config["birthday1"]["birthday"]
-    birth_day = get_birthday(birthday, year, today)
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, city, weather, temp, wind_dir, note_ch, note_en)
