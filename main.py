@@ -103,7 +103,7 @@ def get_birthday(birthday, year, today):
 
 
 def get_ciba():
-    url = "https://apis.tianapi.com/caihongpi/index?key=be82c6c134c14c8d40b81a73b8a05bdb"
+    url = "http://open.iciba.com/dsapi"
     headers = {
         'Content-Type': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
